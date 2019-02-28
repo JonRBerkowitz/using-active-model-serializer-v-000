@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       #                          include: [author: { only: [:name]}])
        # AFTER USING OUR SERIALIZER
 
-         format.json {render json: @post, status: 200 }
+      render json: @post, status: 200
   end
 
   def new
